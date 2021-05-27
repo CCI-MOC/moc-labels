@@ -1,0 +1,26 @@
+name: Type
+description: >-
+  The `type` axis describes in broad terms what sort of work is
+  required by the issue or PR.
+labels:
+  - name: type/bug
+    aliases:
+      - bug
+    description: Something isn't working
+    color: "d73a4a"
+  - name: type/enhancement
+    aliases:
+      - enhancement
+    description: This is a request for a new feature
+    color: "a2eeef"
+  - name: type/documentation
+    description: This task is mostly about documentation
+    color: "0075ca"
+  - name: type/research
+    aliases:
+      - research
+    description: This task is primarily about information discovery
+    color: "e99695"
+  - name: type/discussion
+    description: We need to talk about this
+    color: "ff99ff"

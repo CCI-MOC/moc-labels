@@ -1,0 +1,25 @@
+name: Status
+description: >-
+  The `status` axis describes the current condition of the issue or
+  PR.
+labels:
+  - name: status/invalid
+    aliases:
+      - invalid
+    description: This doesn't seem right
+    color: "e4e669"
+  - name: status/wontfix
+    aliases:
+      - wontfix
+    description: We will not work on this issue
+    color: "ffffff"
+  - name: status/blocked
+    aliases:
+      - blocked
+    description: This has a dependency
+    color: "873719"
+  - name: status/accepted
+    aliases:
+      - accepted
+    description: We have accepted item into a sprint
+    color: "ededed"

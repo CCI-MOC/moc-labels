@@ -1,0 +1,22 @@
+name: pre-commit
+
+on:
+  pull_request:
+  push:
+
+jobs:
+  pre-commit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: check out repository
+        uses: actions/checkout@v2
+      - name: set up python
+        uses: actions/setup-python@v2
+      - name: run pre-commit checks
+        uses: pre-commit/action@v2.0.3
+      - name: check for out-of-date files
+        run: |
+          if ! make -q; then
+            echo "ERROR: files are out of date; please run make." >&2
+            exit 1
+          fi

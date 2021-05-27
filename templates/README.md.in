@@ -1,0 +1,44 @@
+# A Taxonomy for Issue and PR Labels
+
+## Overview
+
+Labels are organized into a series of [axes](#axes) indicated by a
+prefix on the label. There are no "top-level" labels; every label
+belongs to an axis.
+
+For axes with an implied ordering (such as "priority"), colors are
+allocated to labels along a gradient. For axes like "type" in which
+labels represent distinct, unrelated values, colors can be chosen at
+will.
+
+## Axes
+
+> This documentation is generated automatically from the YAML
+> files in the [`labels/`](labels/) directory.
+
+### Single value axes
+
+Issues and PRs may have no more than one label from the following
+axes.
+
+@SINGLE_VALUE_AXES@
+
+### Multi value axes
+
+Issues and PRs may have multiple labels from each of the following
+axes.
+
+@MULTI_VALUE_AXES@
+
+## Resources
+
+Thoughtful posts on taxonomy, color, etc:
+
+- https://medium.com/@dave_lunny/sane-github-labels-c5d2e6004b63
+- https://seantrane.com/posts/logical-colorful-github-labels-18230/
+- https://robinpowered.com/blog/best-practice-system-for-organizing-and-tagging-github-issues
+
+Good for color gradients:
+
+- https://mdigi.tools/color-shades/
+- https://noeldelgado.github.io/shadowlord/

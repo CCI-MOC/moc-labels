@@ -1,0 +1,17 @@
+name: Effort
+description: >-
+  The `effort` axis describes how much work we believe will be required
+  to resolve the issue.
+labels:
+  - name: effort/hours
+    color: "ffe0b3"
+    description: This task should take at most a few hours to complete.
+  - name: effort/days
+    color: "ffcc80"
+    description: This task may take several days to complete.
+  - name: effort/weeks
+    color: "ffb84d"
+    description: This task may take several weeks to complete.
+  - name: effort/∞
+    color: "b36b00"
+    description: This task is too large to be actionable.

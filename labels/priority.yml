@@ -1,0 +1,16 @@
+name: Priority
+description: >-
+  The `priority` axis describes the criticality of an issue.
+labels:
+  - name: priority/critical
+    description: This task is immediately necessary
+    color: "fc1d47"
+  - name: priority/high
+    description: This task is needed as soon as possible
+    color: "fc4f70"
+  - name: priority/medium
+    description: This task should be scheduled.
+    color: "fd8199"
+  - name: priority/low
+    description: The same as "no priority"
+    color: "ffffff"

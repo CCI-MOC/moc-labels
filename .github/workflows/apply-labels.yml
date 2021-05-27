@@ -1,0 +1,25 @@
+name: apply-labels
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  apply-labels:
+    runs-on: ubuntu-latest
+    container:
+      image: quay.io/massopencloud/gh-tools:f944282
+    steps:
+      - name: Checkout out repository
+        uses: actions/checkout@v2
+
+      - name: Generate labels.json
+        run: |
+          make labels.json
+
+      - name: Apply labels
+        env:
+          GITHUB_ACCESS_TOKEN: ${{ secrets.GH_API_TOKEN }}
+        run: |
+          sh scripts/apply-labels.sh

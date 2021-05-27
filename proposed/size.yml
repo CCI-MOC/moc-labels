@@ -1,0 +1,17 @@
+name: Size
+description: >-
+  The `size` axis describes how much work we believe will be required
+  to resolve the issue.
+labels:
+  - name: size/x-small
+    color: "ffe0b3"
+  - name: size/small
+    color: "ffcc80"
+  - name: size/medium
+    color: "ffb84d"
+  - name: size/large
+    color: "ffa31a"
+  - name: size/x-large
+    color: "e68a00"
+  - name: size/∞
+    color: "b36b00"
