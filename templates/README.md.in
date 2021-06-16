@@ -1,3 +1,7 @@
+<!--
+WARNING: README.md is generated from templates/README.md.in.
+Changes made to README.md will be lost.
+-->
 # A Taxonomy for Issue and PR Labels
 
 ## Overview
@@ -10,6 +14,16 @@ For axes with an implied ordering (such as "priority"), colors are
 allocated to labels along a gradient. For axes like "type" in which
 labels represent distinct, unrelated values, colors can be chosen at
 will.
+
+## Automation
+
+These labels are applied using a [GitHub action][apply-action] that
+applies the labels to a list of repositories defined in
+[config/repositories.txt][config]. The script runs daily, and whenever
+the `master` branch is updated.
+
+[apply-action]: .github/workflows/apply-labels.yml
+[config]: config/repositories.txt
 
 ## Axes
 
