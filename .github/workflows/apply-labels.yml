@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - master
+    paths:
+      - 'labels/**'
   schedule:
     - cron: '15 2 * * *'
   workflow_dispatch:
